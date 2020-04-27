@@ -1,0 +1,56 @@
+java.lang.Stringbuffer
+
+* write a function to return the first half of the given string
+
+* StrinBuffer is mutable sequence of characters. 
+
+* A string buffer is like a String but can be modified without creating
+  any de-referenced objects.
+  
+* StringBuffer is final and cannot be inherited
+
+* StringBuffer is immediate sub-class of Object class
+
+* Any modification to StringBuffer can be done only by 
+  using the methods of StringBuffer class
+
+* + (concatenation) operator is not supported by StringBuffer
+
+* StringBuffer objects can be created only by using new operator.
+
+* toString() of Object class is overriden in StringBuffer class
+  which returns the string value present in given string
+  object.
+  
+* StringBuffer is a thread-safe class and safe for use by multiple threads
+  
+
+java.lang.StringBuilder
+
+* StringBuilder is mutable sequence of characters. 
+
+* A StringBuilder is like a String but can be modified without creating
+  any de-referenced objects.
+  
+* StringBuilder is final and cannot be inherited
+
+* StringBuilder is immediate sub-class of Object class
+
+* Any modification to StringBuilder can be done only by 
+  using the methods of StringBuilder class
+
+* + (concatenation) operator is not supported by StringBuilder
+
+* StringBuilder objects can be created only by using new operator.
+
+* toString() of Object class is overriden in StringBuilder class
+  which returns the string value present in given string
+  object.
+  
+* StringBuilder are not safe for use by multiple threads.
+  
+  
+  
+  
+  
+  

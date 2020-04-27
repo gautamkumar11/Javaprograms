@@ -1,0 +1,26 @@
+Wrapper Classes
+  data-type    wrapper class
+* byte       - Byte
+* short      - Short
+* int        - Integer
+* float      - Float
+* long       - Long
+* double     - Double
+* char       - Character
+* boolean    - Boolean
+
+
+* Wrapper classes contains in-built methods which are used to perform
+  basic operations on the primitive data types.
+  
+* wrapper classes are used to convert primitive values to java objects.
+
+* For every primitive data type there is one corresponding wrapper class
+  present in java.lang pkg. 
+  
+* If you try to assign a primitive value to an Object class ref. var then JVM
+  1. Creates the object of that corresponding wrapper class.
+  2. The address will be stored in Object class ref. var to perform upcasting.  
+
+  
+  
