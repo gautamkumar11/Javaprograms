@@ -357,7 +357,106 @@
    LinkedList(Collection<? extends E> c)
    Constructs a list containing the elements of the specified collection.
    
+ ------------------------------------------------------------------------------------------
+ 
+ 
+   HashMap
+     
+   * HashMap do not store duplicate keys.
+   * HashMap stores duplicate value.
+   * HashMap do not have index.
+   * KEY and VALUE are added to HashMap using put(key,value);
+   * Value from HashMap is retrieved using get(key).
+   * If you try to add a New value with Old Key then,
+     the old value will be replaced with the new value for the given key.
+   * Only one key can be Null.
+   * Values in HashMap can be Null.
+   * HashMap do not preserve insertion order.
+   * Underlying DS of HashMap is HashTable.
    
+   
+   
+    LinkedHashMap
+     
+   * LinkedHashMap do not store duplicate keys.
+   * LinkedHashMap stores duplicate value.
+   * LinkedHashMap do not have index.
+   * KEY and VALUE are added to LinkedHashMap using put(key,value);
+   * Value from LinkedHashMap is retrieved using get(key).
+   * If you try to add a New value with Old Key then,
+     the old value will be replaced with the new value for the given key.
+   * Only one key can be Null.
+   * Values in LinkedHashMap can be Null.
+   * LinkedHashMap do PRESERVE the insertion order.
+   * Underlying DS of LinkedHashMap are LinkedList and HashTable.
+   
+   
+   
+   
+    TreeMap
+     
+   * TreeMap do not store duplicate keys.
+   * TreeMap stores duplicate value.
+   * TreeMap do not have index.
+   * KEY and VALUE are added to TreeMap using put(key,value);
+   * Value from TreeMap is retrieved using get(key).
+   * If you try to add a New value with Old Key then,
+     the old value will be replaced with the new value for the given key.
+   * NOT EVEN one key can be Null.
+   * Values in TreeMap can be Null.
+   * TreeMap DO NOT PRESERVE the insertion order.
+   * Underlying DS of TreeMap are Binary Search Tree.
+   
+   * The values in TreeMap are sorted according to Keys.
+   * The keys in TreeMap should be object of a class that implements
+     Comparable Interface and Override compareTo().
+   * The keys in TreeMap should be Homogeneous.
+   * The values in TreeMap can be be Heterogeneous.
+   
+   Generics
+   
+   * Generics are used to achieve two goals  
+     1.Making the given collection Type Safe.
+     2.To avoid Unwanted down casting.
+     
+    * generics are declared with Collection Decleartion
+    * generics should be always written within angular brackets.
+     
+     Syntax : CollectionName<Type> ref = new CollectionName<Type>();
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
    
  
  

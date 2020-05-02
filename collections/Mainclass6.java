@@ -19,7 +19,7 @@ public class Mainclass6
 	{
 		OrderZtoA o1 = new OrderZtoA();
 		
-		TreeSet t1 = new TreeSet(o1);
+		TreeSet<String> t1 = new TreeSet<String>(o1);
 
 		t1.add(new String("Bat"));//---> compare() of OrderZtoA
 		t1.add(new String("Camel"));
