@@ -1,0 +1,25 @@
+Threads and MultiThreading
+
+
+* A Thread is an independent part of same program which will get its own
+  stack and CPU time for the execution.
+  
+* Threads are used for performing MULTITASKING in programs / applications.
+
+* Thread creation and execution is a costly with respect to memory and CPU time
+  and hence unwanted thread creations should totally avoided.
+  
+* Whenever JVM starts the execution it creates 3 threads by default
+  
+  Main thread
+  Garbage collector
+  Thread Scheduler
+  
+* By default all the programs in java will be executed in Main Thread.
+
+* In java threads can be created in 2 ways
+  - By Extending Thread class
+  - By Implementing Runnable interface
+  
+  
+ 
