@@ -1,0 +1,76 @@
+File Handling
+- File : File is an entity which contains information.
+- Folder/Directory : It is a container where file are stored.
+- File System : It is a logical arrangement done by the operating system to manage files and folders.
+- File Handling : Writing java programs to manage or create, delete, read, write etc. the files is called file handling.
+
+File Class
+- The file class allows the user to create files and folders in the system.
+Methods of File Class
+(i) mkdir() – make directory - This method creates a new folder of directory in the specified location.
+(ii) exists() – This method checks if the given file or folder is present in the specified location and returns true, if the file or folder already exists, else it return false.
+(iii) createNewFile() – This method creates a new file at the specified location.
+(iv) length() – This method returns number of characters present in the given file. The return type of this method is long.
+FileWriter class
+- FileWriter helps the programmer to write the data to the file specified in the location.
+Method of FileWriter
+(i) write () – This methods writes all the data with the output stream.
+(ii) flush() – This method writes all the data from the stream to the gien file.
+Note : The stream should be closed by the programmer explicitely by using close() methods. It always a good practice to call close methods of the stream within the finally blocks.
+FileReader class
+- FileReader reads the data from the file one character at a time.
+Methods of FileReader
+(i) read() – The read() reads one character at a time and stores it within the given character array.
+To pass the character Array we have to create a character array matching the number of characters present in given file.
+
+Finally block :
+- It is a block of code which will be executed irrespective of occurance of exception, means exception occurred or not occurred.
+- Finally block should be always written after catch block.
+
+Serialization
+- The process of converting into java object into stream of byte is known as serialization.
+
+
+There are two types of Stream :
+- InputStream
+- OutputStream
+
+There are two types of value present
+- Char stream
+- Byte stream
+
+Steps to Achieve Serialization
+1. Establish the o/p and byte stream using FileOutputStream class.
+2. Create an object for ObjectOutputStream for converting java object into byte stream.
+3. Invoke writeObject method.
+4. Close the connection which is written in finally block.
+
+
+Constructor also throws an exception Steps to Achieve Serialization
+1. Establish the input & byte stream.
+2. Create an object for object inputStream.
+3. Invoke read object method.
+4. Close the connection.
+Use of Marker interface
+- To make class eligible for any operation such as serializable, clonable is a marker interface which helps class to perform serialization.
+
+Object Cloning
+- Creating an object from an existing object with the same data is called as object cloning.
+- If you want to clone an object then the class should implements clonable interface(which is market interface).
+- You should also override clone method of object class to perform cloning.
+- Copying all the data from exisiting object to cloned object is called as deep-copying.
+
+- Copying only required data from the existing object to cloned object is called as shallow copying.
+
+- If you try to clone an object using clone method without implementing clonable interface then JVM throws cloneNotSupportedException.
+
+Class.forName()
+Note :
+- In java static block load before the main method.
+- If any block declare with static is known as static block
+- If any block declare without any static keyword is known as non-static block
+Syntax :
+	Static
+	{
+	
+	 }
