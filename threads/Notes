@@ -22,4 +22,94 @@ Threads and MultiThreading
   - By Implementing Runnable interface
   
   
+ * By Extending Thread class
+ 
+   * Define task
+     Step 1: Create a class that extends Thread class.
+     Step 2: Override run() to define the task that should be executed by the thread.
+   * Start the thread execution
+     Step 3: Create the object of Subclass
+     Step 4: Use the subclass object to call start() of Thread class.
+ 
+ 
+ * By Implementing Runnable interface
+   
+   * Define task
+     Step 1: Create a class that implements Runnable interface.
+     Step 2: Override run() to define the task that should be executed
+             by the thread.
+   * Start the thread execution
+     Step 3: Create the object of implementation class
+     Step 4: Create the Object of Thread class and pass the implementation class
+             object reference to Thread constructor.
+     Step 5: Use the Thread class object to call start() of Thread class.
+   
+   
+   * If the class is already extends from some other superclass , then
+     its is not possible to extends Thread class as it leads multiple
+     inheritance and hence thread task is define by Implementing Runnable interface.
+ 
+ 
+ Executor Framework
+ 
+  Executor Framework helps in creating and managing Thread groups/pools.
+ 
+  * We can reuse same thread to perform new task.
+  * Threads will execute asynchronous.
+  * We can control the start and stop of thread execution explicitly.
+  * For every type of requirement different pre-defined pools are avilable.
+  
+  * Executor framework will seperate Task and thread creation.
+  
+  * 1. Define the task 
+    2. Create thread pool
+    3. Submit the task
+    
+    
+    * There are 4 different types of pools that can be created using
+      Executor framework
+      
+      1. Fixed Thread Pool
+      2. Cached Thread Pool
+      3. Scheduled Thread pool
+      4. Single thread executor
+    
+    
+  Fixed Thread Pool
+  * Creates a thread pool that reuses a fixed number of threads 
+    operating off a shared unbounded queue. 
+  
+  * At any point, at most nThreads threads will be active processing tasks.
+  
+  * If additional tasks are submitted when all threads are active,
+    they will wait in the queue until a thread is available.
+  
+  * If any thread terminates due to a failure during execution 
+    prior to shutdown,a new one will take its place if needed to 
+    execute remaining tasks.
+ 
+  * The threads in the pool will exist until it is explicitly shutdown.
+    
+    
+    Cached Thread Pool
+    
+   * Creates a thread pool that creates new threads as needed, 
+     but will reuse previously constructed threads when they 
+     are available. 
+   
+   * These pools will typically improve the performance of programs
+     that execute many short-lived asynchronous tasks.
+    
+   * Calls to execute will reuse previously constructed threads if available. 
+    
+   * If no existing thread is available, a new thread will be created and added
+     to the pool. 
+     
+   * Threads that have not been used for sixty seconds are 
+     terminated and removed from the pool. 
+    
+    Thus, a pool that remains idle for long enough will not consume any 
+    resources.
+    
+    
  
