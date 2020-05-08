@@ -1,0 +1,25 @@
+POLYMORPHISM:
+- One entity showing different behaviours at different places is called as polymorphism.
+- Polymorphism helps in code flexibility
+
+ There are two type of polymorphism.
+(i) Compile time polymorphism
+(ii) Runtime polymorphism
+Compile time polymorphism
+- Binding the method declaration to method definition by the compiler at compile time based on the arguments is called as compile time polymorphism.
+- It is also called as static binding.
+- Eg. Method overloading and constructor overloading
+Runtime polymorphism
+- Binding the method declaration to method definition by the jvm at run time based on the object is called as runtime polymorphism.
+- It is also called as dynamic binding.
+- Eg. Method overriding.
+
+Note :
+Using an upcasted reference if you call an overridden method then you always get overridden implementation on subclass implementation.
+
+To achieve runtime polymorphism we have to follow three steps :
+(i) Inheritance
+(ii) Method overriding
+(iii) Upcasting
+
+-To show code flexibility using polymorphism

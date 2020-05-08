@@ -1,0 +1,25 @@
+RELATION BETWEEN CLASSES IN JAVA:
+
+- The relations between the classes helps in achieving two goals.
+(i) Reduce no. of lines of code.
+(ii) Code reusuability
+
+- There are two types of relations.
+(i) Has-A relation (ii) Is-A relation
+
+
+(i) Has-A Relation:
+- It is a type of relation which is created based on the dependency of one object on the another object.
+- It is of two types : (i) Aggreation (ii) Composition
+
+
+(a) Aggregation :
+- It is a type of Has-A relation where existence of one object is not dependent on another object.
+- The aggregation is achieved by creating a static reference variable pointing to the object of another class.
+
+Note : System.out.println() is the best example of aggregation has-A relation which helps in hide the class. Here println() method is the method of printStream class.
+
+(b) Composition:
+- It is a type of Has-A relation where existence of one object is dependent on another object.
+- The aggregation is achieved by creating a non-static reference variable
+pointing to the object of another class.

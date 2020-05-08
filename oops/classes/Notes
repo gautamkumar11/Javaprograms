@@ -1,0 +1,111 @@
+OBJECTS :
+ Any entity which has states and behaviour is called as objects. For eg. Pen, account, building.
+
+CLASS : -
+- A class is blueprint of an objects.
+- A class contains or defines states and behaviours of an objects.
+- The states of the class are called as data members and the behaviours of the objects are called as function members.
+- The data members of the class are represented by variables and the functions members of the class are represented by methods.
+
+
+JAVA NAMING CONVENTION :
+
+Class :
+- Any entity in java which starts with upper case declared with the keyword class is called as java class.
+- Class names should be nouns, in mixed case with first letter of each internal word capitalize.
+Eg. Account, AccountName;
+
+Interface :
+- Any entity in java which starts with upper case and declared with the keyword interface is called java interface.
+- Interface name should be capitalize like class name.
+- Eg. : interface Storing, interface RunnableInterface
+
+Methods :
+- It defines the action which is performed on data members of the class.
+- Methods should be in mixed case with the first letter lower case, with the first letter of each internal word capitalize.
+- Eg : run(), getData()
+
+Variables :
+- Variables should be declared in mixed case with a lowercase first letter.
+Internal words starts with capital letters.
+- Eg: i, c, myWidth;
+
+Constants :
+- The constants should be all uppercase with words separated by underscore (“ _” ).
+- Eg. MIN_WIDTH = 5;
+
+The members of class be classified into two types :
+(a) Static Members (b) Non-Static members
+
+Static members
+- Any members of the class which is declared using static keyword is called as static members.
+
+Static Members present in Same Class:
+- If a static method is trying to access the static members present in the same class then it can refer to them directly with the name of static member.
+
+Note : - A non static variable can not be referenced by a static context.
+Note : **
+- Within one java program we can write any number of class.
+- If a program contains multiple classes then the class which contains main method should be used as filename.
+
+Static Members Present in Different Class :
+- We can access static members of different class using the classname with dot(.) operator followed by member name.
+
+- Syntax :
+className.memberName; className.memberFunction();
+
+Note : we can not use static member in different class directly. If we use it throw error.
+
+NON-STATIC MEMBERS :
+- Any member of the class which is declared without using static keyword is called as non-static members.
+- We can access non-static members of a class only by creating the object for the class.
+Object creation
+
+Syntax :
+New className()
+Eg.
+New Sample()
+
+Here New is a keyword which creates a new object and Sample() is a constructor call which copy all the non-static member to object.
+- A non static method can access non-static data members or non static function members present in the same class without creating any object.
+
+
+REFERENCE VARIABLES
+
+Demo d1 = new Demo ();
+
+- It is a type of variables which is used to store the address of the objects.
+Static members are called as class members because they can be accessed using the classname.
+- Non static members are called as instance members because they can be accessed only by creating the object or instance.
+- Static members of the class will have only one copy in the memory.
+Static int v1 = 50;
+/S.O.P (Sample.v1); Sample.V1=50;
+
+- Non-static members will have multiple copies in the memory depending on number of objects created.
+Int v1= 100;
+S.O.P ( new Simple().V1);
+S.O.P (new Simple().V2);
+
+
+GLOBAL VARIABLES
+- A variables which is declared within the scope of the class is called as global variables.
+- Global variables can be accessed by all the methods present in the present in the same class.
+
+
+LOCAL VARIABLES
+- Any variables which is declare within the method declaration or method definition are called as local variables.
+- Local variables can be accessed only within the methods in which they are declared.
+- Local variables can not be declared as static or non static.
+
+
+Important notes :
+- Using the object of class we can access both static and non static members of the class.
+- It is strictly not recommended to access static members of the class using objects.
+- Global variables (both static and non-static) will be initialized by the compiler with the default values depending on the datatype.
+- Local variables should be initialized by the programmer explicitly.
+
+DECLARING CONSTANTS :
+- Final keyword is used to declare constants in java.
+- If you declare any variables with final keyword then it can not be re- initialized.
+- If you declare any class with final keyword then the class can not be inheritated.
+- If you declare any method with final keyword then it can not be overridden.

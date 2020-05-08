@@ -1,0 +1,32 @@
+METHOD OVERRIDING:
+
+- Subclass inheriting the method of super class and changing the method definition without changing method declaration (no. of arguments and method name should be same) according to subclass specificiation is called as Method Overriding.
+
+@override :
+- Override annotation helps in addition compile time verification in the subclass to ensure the programmer overriding is overriding the proper method of superclass.
+- It will also improvise code readability.
+- It is not mandatory to write @override.
+- If we don’t write @override then if the method name in subclass different then it treat as a another method and not doing overriding.
+
+If we don’t write @override annotation then it does not throw an error if superclass and subclass method is different in name.
+
+If subclass and super class have same static methods with same declaration and same definition then it is called as method hiding.
+
+-Final method can be inherited but cannot be overridden.
+-Private method can not be inherited and cannot be overridden.
+
+Method Overriding is the best example for Runtime Polymorphism.
+- The binding of method declaration to member definition is done at runtime and hence it is called as late binding.
+- The binding can be changed dynamically at the runtime and hence it is also called as dynamic binding.
+ 
+Note :
+**
+- if subclass and superclass contains method with same name but different arguments then the subclass will contain 2 overloaded methods.
+
+-To achieve method overriding inheritance is mandatory.
+
+-From the subclass object if you (programmer) try to call overridden method you (programmer) always get overridden implementation of the method.
+
+-If we want to execute the overridden implementation of the method and original implementation o the method present in superclass then we can use super keyword from the subclass method to call superclass method.
+
+

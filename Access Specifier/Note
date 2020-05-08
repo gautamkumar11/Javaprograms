@@ -1,0 +1,52 @@
+ACCESS SPECIFIER:
+
+Access specifier are use to provide security for the clases and its members by controlling visibility.
+
+1) public
+2) protected
+3) package level
+4) private
+
+
+Public :
+- If you declare any entity with public access specifier then it can be accessed from the classes present in same package or different package.
+- Public classes and its members will have highest visilibty and lowest security.
+
+Used in different package
+(i) It is mandatory to use import or fully qualified classname when we want to access the members and methods of different packages. If we don’t do it, then it throw a compile time error.
+
+
+
+Protected :
+Op- v1 = 100
+this is public void test()
+- If you declare any entity with protected access specifier then it can be accessed from the classes present in the same package.
+- It is partially visibile to another packages.
+
+The class present in different packages can accessed protected members only by inheritance and creating the object of subclass.
+
+Package-level :
+- If you declare any entity without any access specifier keyword then those members are considered as package level members.
+- Package level members can be accessed only by classes present in same packages.
+
+Private
+- If you declare any entity as private specifier then it can be accessed only within the class in which the members are declared.
+- Compared to other access specifier private members will have highest security and lowest visibility.
+- The subclass can not reduce the visibility of inherited method from superclass. the superclass can only increase the visibility of inherited method from superclass
+
+------------------------------------------------------------------------
+superclass		subclass
+----------------------     ------------------------
+public		public
+----------		------------
+protected		public
+		protected
+-------------		-------------
+pkg-level		pkg-level
+		public 
+		protected
+-------------		---------------
+private		can’nt be inherited
+
+--------------------------------------------------------------------
+(a) if try to reduce the visibility then it throw an error

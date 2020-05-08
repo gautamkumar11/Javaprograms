@@ -1,0 +1,129 @@
+FLOW CONTROL STATEMENT:
+
+- It is a statement which is used to control the execution flow of a program.
+
+- There are two types of flow control statements.
+1. Branching Statement (Decision making Statement)
+2. Looping Statement
+
+Branching Statement (Decision Making)
+- These statements are used to execute a group of statements based on a Boolean condition.
+
+- The type of decision making are :-
+(a) If statement
+(b) If else statement
+(c) If else if statement
+(d) Switch case statement
+
+
+IF STATEMENT
+- If statement executes gives groups of statements within its body only if the Boolean condition result is true.
+
+Syntax :
+	If(condition) – true
+	{
+	Statement ;
+	}
+
+
+IF-ELSE STATEMENT
+- Once the statements written in if block will be executed only if the Boolean condition is true and if Boolean is false then statements of else block will be executed.
+
+Syntax:
+	If(condition) true
+	{
+		Statement;
+	}
+	Else
+	{
+		Statement;
+	}
+
+
+IF-ELSE-IF STATEMENT 
+SYNTAX :
+	If(Boolean condition 1)
+	{
+	Statement;
+	}
+	Else if(condition 1 )
+	{
+	Statement;
+	}
+	Else { }
+
+
+SWITCH CASE
+- It is used whenever we have to compare the given value only equals (==) conditions.
+- Switch case statements provides more readability for the program.
+- It is not possible to compare the conditions other than equals conditions.
+-
+Syntax : 
+	Switch(choice)
+	{
+	Case 1: 	Statement;
+		Break; 
+	Case 2: 	Statement;
+		Break; 
+	Default :	 Statement;
+	}
+
+ Note : 
+Break statement stop the execution of the given block at a given line of code. Writing break statement after default case is not mandatory in switch case statement.
+
+
+LOOPING STATEMENTS
+- They are used to perform repetitive task in the given program with lesser lines of code.
+- Different types of loops are :-
+(a) For loop
+(b) While loop
+(c) Do-while loop
+(d) For each loop /advanced/enhanced loop
+FOR LOOP (ITERATION) :
+- One complete execution cycle of a loop is called as iteration.
+- The number of iteration of a loop depends on the condition of the loop.
+
+Syntax :
+	For(initialization; condition; counter)
+	{
+		Statement;
+	}
+
+- For loop is a type of loop which is used whenever the logical start and logical end is well defined.
+
+
+NESTED FOR LOOPS
+- A for loop written within the body of another for loop is called as nested for loop.
+
+Syntax :
+	For(initialization; condition; counter)
+	{
+		For(initialization; condition; counter)
+		{
+		Statement ;
+		}
+		Statement
+	}
+
+WHILE LOOP
+Syntax :
+	While(Boolean_condition)
+	{
+	Statement1;
+	}
+- It is a type of looping statement. It is used whenever the logical start and logical end is not well defined.
+
+
+DO-WHILE LOOP
+Syntax :
+	Do
+	{
+	Statement;
+	}
+	While(Boolean condition);
+
+
+
+
+
+

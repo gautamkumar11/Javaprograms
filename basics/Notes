@@ -1,0 +1,154 @@
+KEYWORDS, IDENTIFIERS & VARIABLES
+-------------------------------------------------------------------------------------------------------------------
+KEYWORDS:
+- They are reserved words which have a predefined meaning.
+- It is not possible to change the meaning of keywords in any programming language.
+- Keywords are used to define a class, declare a variables or define a method etc. in java.
+
+Keywords in Java:
+Abstract	Continue	      For	Instanceof
+Switch	 Byte	Default	Assert ***
+Goto* 	Package	    New	Synchorinised
+Boolean	Do	    	Private
+This	Break	Double	Implements
+Protected	Throws	If 	Else
+Imports	Public	Throws	Case	
+ Try	while	Super	Enum****
+Return	Transient	Catch	Extends
+Int	Short	Float	Char
+Final	Interface	Static	Void	
+Class	Finally	Long	Strictfp**
+Volatile	Const*		Native
+	
+* not used
+** added in 1.2
+*** added in 1.4
+**** added in 5.0
+------------------------------------------------------------------------------
+IDENTIFIERS :
+- It is used to identify class or interface, methods, variables etc.
+
+Rules of Identifiers :
+- Identifiers can be alphanumeric.
+- Identifiers should not start with numbers.
+- $ and _ (underscore) are the only two special character allow.
+- An identifier can start with $ and _.
+- Keywords can not be used as identifiers.
+
+------------------------------------------------------------------------------
+VARIABLES :
+- A variables is a named memory location which holds the value for the program.
+- To use a variables we have to follow three steps :
+1. Declaration
+2. Initialization
+3. Utilization (Usage)
+Declaration of a variables :
+
+Syntax :
+	Datatype variablename;
+	 Eg : int age;
+
+- It is a statement which defines what type of data will be stored in the given variables.
+Initialization of a variable : Syntax :
+Variable=value;
+Eg: age=25;
+- It is a statement which is written to store the value into the variable using assignment operator.
+
+Utilization of a variables:
+- Statements which are written to use the values of the variables are called as utilization
+
+
+Primitive Data types in java:
+			                  Default value
+------------------------------------------------------------------------------
+	Byte   	8  bits 	 1byte 	0
+Integer	Short 	16 bits	 2 byte	0
+	Int	32 bits	4 bytes	0
+	Long	64 bits	8 bytes	Ol
+------------------------------------------------------------------------------
+	Float	32 bits	4 bytes	0.0f
+Decimal	Double	64 bits	8 bytes	0.0
+------------------------------------------------------------------------------	
+	Char	16 bits	2 bytes	Blank space
+	Boolean	8 bits	1 bytes	false
+------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------
+
+OPERATORS:
+It performs operations on the given operands and produce results.
+
+Arithmatic Operator
+- To perform any arithmetic operator
+- +, -, *, /, %
+
+Note- Variables of the program should not be printed with “double quotes”. Note – System.out.print – prints & keep cursor in same line.
+
+System.out.println – Prints & makes the cursor to next line.
+
+-If we perform any arithmetic operation with the help of arithmetic operators with the help of arithmetic operators the result variables has to be decided by the following method.
+Max(int, type of 1st operand, type of 2nd operand)
+
+Concatination Operator:
+- It helps in concatenating (joining) a string value with any other value.
+
+Combination of Concatination:
+	2+ “hello” – 2hello
+	“hello”+123 – hello123
+	“hello” + “World” – helloworld
+	2+3+ “hello” – 5hello
+	“hello”+2+3 – hello2+3 – hello23
+	2+ “hello”+3 – 2hello3
+
+Increment & Decrement Operator :
+- Those operators are used to increase or decrease the value of a variable by 1 units.
+Increment Operator (++) :
+
+- There are two types of increment operator.
+1. Pre-increment.
+2. Post-increment.
+
+- If you write post or pre increment operators with a variables independently without any mathematical of expressions then, both operators will have same results.
+
+
+Pre Increment	Post increment
+-----------------------	------------------------
+First increment	Substitute
+Substitute	Perform operation
+Perform operation	Increment value
+
+
+Increment operator can not be used with Boolean dataypes.
+- Any value can not be used directly with increment operators.
+
+ Note :
+	Char a1= ‘A’;
+	a1 = a1+1; //can not write like this
+	a1=66; a1= ‘B’
+
+Decrement Operator: (--)
+- Those operators are used to decrease the value of a variable by 1 units.
+
+- There are two types of decrement operator.
+3. Pre-decrement
+4. Post-decrement
+
+- If you write post or pre decrement operators with a variables independently without any mathematical of expressions then, both operators will have same results.
+
+Pre decrement	Post decrement
+--------------------- 	----------------------
+First increment	Substitute
+Substitute	Perform operation
+Perform operation	Increment value
+
+decrement operator can not be used with Boolean dataypes.
+- Any value can not be used directly with decrement operators.
+
+Note :
+	Char a1= ‘B’; a1 = a1-1; a1=65;
+	a1= ‘A’
+
+
+
+
+

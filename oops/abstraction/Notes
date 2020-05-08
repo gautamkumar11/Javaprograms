@@ -1,0 +1,18 @@
+ABSTRACTION:
+
+- Hiding the implementation details of the class and exposing only the behaviours or services is called as abstraction.
+
+
+To achieve abstraction we have to follow three steps :
+
+(i) Generalize the methods of implementation class and store them inside the interface.
+(ii) Create the object of implementation class and store the address in interface reference variable.
+(iii) Use the interface reference variables to access the methods of implementation class.
+
+- Using abstraction we can developed APIs(Application Programming Interface)
+- Using abstraction we can achieve Loose Coupling.
+
+To achieve loose coupling we have to create three layers :
+(i) Object implementation layer
+(ii) Object creation layer
+(iii) Object utilization layer

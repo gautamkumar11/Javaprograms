@@ -1,0 +1,28 @@
+METHODS IN JAVA
+
+A method is named block of codes which perform a specific task and it may or may not return a value.
+
+Syntax
+	Access_specifier access_modifier return_type name(arg list)
+	{
+		Statement; 
+
+		Return;
+	}
+- The return type of the method can be any primitive datatype or class type or void.
+- The return statement of the method is used to return the control from method back to calling method
+- Calling method : A method which is calling another method is known as calling method.
+- A method which is called by another method is known as called method.
+- Every method should be written within only the scope or body of a class.
+- No methods will be executed without calling the method.
+- If a method is expecting the arguments then you should call the same method by passing the required values matching the datatype.
+If you declare the return type of the methods as void then the method returns only the control from called method to back o calling method.
+- If the return type of the method is void then the written statement will be written by the compiler even if the programmer miss it.
+
+
+METHOD WITH RETURN VALUE:
+- If a method is returning a value then the return type of the method should be a primitive datatype or a class type matching the returned value.
+- If a method is returning a value then you should store the returned value within a variables matching the return type of the method.
+- From a method we can return only one single value.
+
+

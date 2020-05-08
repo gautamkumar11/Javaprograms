@@ -1,0 +1,45 @@
+CONSTRUCTOR IN JAVA:
+
+- Constructor is a special type of method which has same name as the classname.
+- Every java class must and should have a constructor.
+- If the programmer do not write a constructor then compiler writes default constructor implicitely.
+- Constructor can not be declared as static.
+- Constructor can not be declared as final.
+- If you write return type for a constructor then it will be considered as a normal method.
+- We can write return statement within the constructor body.
+- The constructor can be executed only by creating an objects.
+- Constructors can not be called explicitely using the object.
+
+ Constructor are of two types : 
+(a) zero or default constructor 	(b) parameterized constructor.
+
+- If a programmer writes the constructor explicitely then the compiler do not write default constructor implicitely.
+
+Constructor are used to initialize the data members (static and non static) of the class.
+
+Constructor Overloading
+- Developing multiple constructor within the same class which differ in
+(i) No. of arguments
+(ii) Datatypes of arguments
+(iii) Sequence of arguments. Is called as constructor overloading.
+
+Constructor overloading is helpful in providing flexibility for the users to create the objects.
+- Constructor overloading is the best example for compile time polymorphism.
+
+This keyword:
+- It is used to differentiate between local and global variables whenever they have same names.
+-This keyword is a special type of reference variables which always points to active or current instance of the class.
+- This keyword can not be used within the static method.
+- This keyword can be used only within the non-static methods and constructors of the class.
+
+This() statement:
+- It is used to call one constructor from another constructor which are present in same class.
+
+This() statement should be written as first statement within the constructor body.
+
+We can not write multiple this() statement within the constructor body.
+
+The called constructor can not call back calling constructor using this() statement because it leads to recursive constructor invocation error.
+
+The constructor can not call itself with this statement, because it leads to recursive constructor invocation.
+

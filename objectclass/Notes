@@ -1,0 +1,33 @@
+Java.lang.package
+- java lang package contains the classes and interfaces which are required to write simple java program or to develop complicated java application.
+
+
+Object Class:
+It is the supermost class in java
+- Every class directly or indirectly inherits from object class.
+- Object class is present in java.lang.package.
+- Every methods of Object class is non-static.
+
+
+hashCode()
+- This method returns hashcode value of the given object
+- hashCode value is an unique integer value which is generated based on the address of the objct.
+
+
+toString() –
+- This methods returns string representation of the object.
+
+The string representation of object contains :
+(i) fully qualified classname
+(ii) @ character
+(iii) hexadecimal value of hashcode.
+
+syntax:
+	fullyqualifiedclassname@hexadecimal of hashcode 
+	eg: java.lang.Object@4352625
+
+Question : What happens if you try to print a reference variables?
+Ans : println() methods implicitely calls toString() method and prints the returned string values.
+
+equals(Object ref)
+- This method compares hashCode value of given two object and returns true if they are equals else it returns false it depends on hashCode.

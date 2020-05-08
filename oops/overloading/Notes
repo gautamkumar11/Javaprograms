@@ -1,0 +1,25 @@
+METHOD OVERLOADING:
+
+- Developing multiple methods with the same name within the same class which differs in
+(i) no. of arguments
+(ii) data type of arguments
+(iii) sequence of arguments
+is called as method overloading.
+
+- we can overload both static and non static methods.
+
+Two overloaded method can have different return datatypes.
+
+- with the help of method overloading we can achieve code flexibility.
+- Method overloading is the best example for compile time polymorphism
+- The binding of method declaration to method definition is done at the compile time and hence it is called as compile time binding or early binding.
+- Since the binding is done at the compile time it can not be changed at runtime and hence it is called as static binding.
+- It makes easy for the programmer to remember the methods name and increase the readability of program.
+
+Disadvantage of Method Overloading
+- The overloaded methods should have required java documents in order to understand the functionality of every overloaded method.
+
+Application of Method Overloading
+- Whenever the project or application has same logic to be executed with different type of arguments then we go for method overloading.
+
+

@@ -1,0 +1,30 @@
+JAVA PACKAGES
+- A package is a group of classes and interface which is specific to one module or features the project.
+
+Advantage:
+- Maintenance of the application source code is easy.
+- It avoids naming collision.
+- It provides security for the class and its members with the help of access specifiers.
+
+Note –
+- The package name should be in the reverse order of domain .
+- Syntax :
+Domainname.appname.modulename Domainname.companyname.appname.modulename
+-For eg : Com.gmail.inbox;
+
+- Package names should be always written in lower case.
+- To access the properties of a class or to create the object of the class present in different package we can use two different approaches.
+(i) Using fully qualified classname
+(ii) Using import statement
+
+Fully Qualified classname
+- A classname which is written with its package name is called as fully qualified classname
+
+Syntax :     
+	Domain.app.module.classname
+
+
+- If we have two packages with same name and same classname, in this case we have to use both import statement and fully qualified classname together. If we only use two import statement then it show a compile time error.
+
+
+

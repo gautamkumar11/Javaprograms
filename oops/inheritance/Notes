@@ -1,0 +1,82 @@
+INHERITANCE IN JAVA (IS-A RELATION) :-
+
+-One class acquiring the properties of another class is called as inheritance.
+- The class from where the properties are inherited is called as super class, base class or parent class.
+- The class which is inheriting properties from another class is called as subclass, derived class or child class.
+- Inheritance between the classes is achieved with the help of extends keywords.
+- Using the child class objects we can access properties of both child class and parent class.
+- We can access both static and non-static members of the parent class from child class object
+
+Constructor of super class can not be inherited to subclass. Because constructor should be in a same class.
+
+- Subclass can inherit final data members but it can not re-initialize
+
+Subclass can inherit final method of super class but can not override it.
+
+- The types of inheritance are :
+(i) Single Inheritance
+(ii) Multi-level inheritance
+(iii) Multiple inheritance
+(iv) Hierarchical inheritance
+(v) Hybrid inheritance
+
+(i) Single Inheritance:
+- One subclass acquiring or inheriting properties of one superclass is called as single inheritance.
+
+(ii) Multi-level inheritance:
+- One sub-class inheriting from one super class and that super class is inheriting from another super class is called as multilevel inheritance.
+
+(iii) Multiple Inheritance:
+- One subclass inheriting from two or more superclass is called as multiple inheritance.
+-Java does not support multiple inheritance.
+
+(iv) Hierarchical inheritance :
+- One superclass extended by two or more subclass is called as hierarchical inheritance.
+-Using hierarchical inheritance we can achieve generalization.
+- Defining the common methods and variables of sublclass in one superclass is called as Generalization.
+- Developing methods and variable specific to one class is called as specialization.
+
+(v) Hybrid Inheritance
+- In this this combination of different type of inheritance.
+
+SUPER(); STATEMENT
+- It is used to call the super class constructor from subclass constructor.
+Super statement can be written explicitely by the programmer or implicitely by the compiler.
+- Super(); statement should be written the first line of constructor body.
+
+Multiple super statement within the same constructor body is not allowed.
+
+- If the superclass contains only parameterized constructor then the programmer should write super statement explicitely and pass the required argument value.
+
+If super class have constructor overloading then to call all these methods.
+
+Object class:
+- It is the supermost class in java. Every class in java directly or indirectly extends from object class.
+- If the class is not extending from any class then the compiler makes the object class as superclass by writing “extends object” implicitely.
+
+
+Constructor chaining
+- Subclass constructor calling super class constructor, superclass constructor calling object class constructor is called as constructor chaining.
+
+Note :
+- within the same constructor body it is not possible to write both this() statement.
+
+- if the subclass and superclass have the members with same names then within the subclass methods the compiler gives preference for subclass members.
+
+
+Super Keyword:
+- It is a special type of reference variables which always points to super class object.
+- Super keyword can not be written inside a static method.
+- Super keyword is used to differentiate between subclass and super class member whenever we try to access them in subclass method.
+
+
+WHY JAVA DOES NOT SUPPORT MULTIPLE INHERITANCE OR EXPLAIN DIAMOND PROBLEM IN JAVA:
+
+- It creates an ambiguity for the compiler to choose the path from where the properties of object class should be copied to subclass.
+- To call constructor of two super-class two super(); statement are required and this is not supported in java.
+
+ Note : multiple super statements are not allowed because super class object should be created only once
+- If two super class contains method with same name and arguments and if you tried to call the method from subclass object, it results the ambiguity for the compiler which choose the method for execution.
+
+
+

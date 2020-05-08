@@ -1,0 +1,37 @@
+INTERFACE:
+
+- It is a type of class where the methods are by default abstract and the datamembers are by default static and final.
+(i) methods are default abstract
+(ii) data members are default static
+(iii) data members are default final
+- It is imposible to create object for interface.
+
+- we can create reference variable or interface which is used to achieve
+(i) runtime polymorphism
+(ii) Derived Casting
+
+- a class can inherit from an interface by using implements keyword only.
+
+- if a class implements from an interface then the class should override every abstract method of the interface.
+-interface do not extends from any class (not even object class)
+- interface do not have any constructor.
+- one interface can only extends another interface but can not implements it.
+
+- if we write implements instead of extends then it throw an error.
+- A class can extends one class and implements an interface at the same time.
+- One class implements any number of interfaces.
+
+- One interface can extends any number of interface.
+Program.
+
+Marker interface
+- An interface which do not contain any methods is called as marker interface.
+Program:
+	interface Run
+	{
+
+	}
+Functional interface:
+- An interface which contains only one abstract method is called as functional interface.
+
+

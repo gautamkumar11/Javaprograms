@@ -1,0 +1,47 @@
+ARRAYS (BASICS):
+
+- An array is homogeneous group of elements which has fixed size and index.
+- Using array we can manage the data easily to perform different operations.
+
+(a) Array Declaration Syntax :
+	Datatype [] array_name;
+
+ 	Eg : int [] marks;
+
+	Or Datatype array_name[]; Int marks[];
+
+(b) Array Creation Syntax :
+
+	Array_name = new datatype [size];
+ 	Eg marks = new int[5];
+
+Index 0 1 2 3 4
+
+To Declare and Create Array in Single line Syntax :
+
+	Datatype arrayname [] = new datatype [size];
+	
+	Eg int marks[]=new int[5];
+
+- After array creation every bucket of the array will be initialize with default values according to datatype of the array. 
+For eg. If the datatype of an array is int then all the bucket will be filled with 0. Or if the datatype of an array is Boolean then all the bucket will be filled with false.
+
+(c) Initialize Array Syntax :
+	Arrayname[index]=value;
+	For eg: marks[0]=20;
+
+Length (variables of array):
+- It contains count of number of bucket present in the given array.
+
+Notes :
+- If you know the size of the array and the data to be stored in the array in advance then you can declare and initialize the array in same line.
+
+Syntax :
+	Datatype[] arrayname = {val1, val2….};
+
+
+ArrayIndexOutOfBoundsException:
+- Whenever we try to add the elements to array execiding the size of array then JVM throws ArrayIndexOutOfBoundsException.
+
+- If you try to retrieve the elements from the array execiding the size of the last index of the array then JVM throws ArrayIndexOutOfBoundsException.
+

@@ -1,0 +1,69 @@
+TYPE CASTING:
+
+Converting one type to another type is called as typecasting.
+- It is of two type
+(i) Primitive casting
+(ii) Derived Casting
+
+(i) Primitive Casting:
+- Converting one primitive type of another primitive type is called as primitive casting.
+
+Primitive Casting is of two type :
+(1) Widening
+(2) Narrowing
+
+(1) Widening
+- Converting a lower datatype value to higher datatype value is called as widening.
+- Widening will be done by compiler implicitely.
+
+(2) Narrowing :
+- Converting a higher data type value to lower datatype value is called as Narrowing.
+- Narrowing should done by the programmer explicitly by writing casting statement.
+- Type Casting Syntax :
+(datatype) value/variables ;
+- Narrowing always results in loss of data.
+
+-If we directly doing narrowing then it throws an error
+
+- If you try to convert a character to integer then integer variable will be containing Unicode value for the given character.
+
+- For a method expecting primitive value we can pass the same primitive datatype value and all its lower primitive datatype value.
+
+- For a method expecting primitive value then if we pass the higher primitive datatype value then it throws an error.
+- If a class contains two overloaded methods one expecting lower datatype value, other expecting higher datatype value and if you pass a lower datatype value to call the method then always method with lower datatype value will be executed.
+
+(ii) Derived Casting
+- Converting one reference type to another reference type is called as derived casting.
+
+- Derived Casting is of two type :
+(1) Upcasting
+(2) Downcasting
+
+(1) Upcasting
+- Converting subclass or childclass reference to superclass or parent class reference is called as upcasing.
+- Using upcasted reference variables can access only superclass or parent class property.
+- Upcasting will be done by the compiler implicitly.
+- Upcasting is achieved by storing the address of child class object into parent class reference variable.
+
+SuperClass sup1 = new Subclass();
+In the above line sup1 is the reference variable which store the address of Sublclass object
+
+(2) Downcasting
+- Converting the upcasted reference back to subclass reference is called as downcasting.
+- Downcasting should be done by the programmer explicitly by writing casting statement.
+
+-downcasting, done by writing downcasting statment.
+- We can downcast only upcasted reference. If we downcast directly superclass into subclass then JVM throws an exception as ClassCastException at runtime.
+
+- If you try to downcast a reference to the class type which do not contain the properties of given class then JVM throws ClassCastException at runtime.
+- We can avoid ClassCastExcpetion by using instanceof operator.
+- Instanceof operator checks if the given reference contains the property of given class and return true if the properties are present else it return false.
+
+- If you want to relate to unrelated classes then you can use Object Class as the common superclass to perform derived casting, achieve runtime polymorphism.
+
+- If a method expecting superclass reference then for the same method you can pass reference of superclass and all its subclass.
+
+- If there are two overloaded methods in a class one expecting superclass reference and the other method expecting subclass reference and if you pass subclass reference to call the method then always method with subclass reference will be executed.
+
+
+

@@ -1,0 +1,34 @@
+ABSTRACT CLASS AND ABSTRACT METHOD:
+
+
+Abstract Method:
+- A method which has only declaration and no definition is called as abstract method.
+- A method which has declaration as well as definition is called as concrete method.
+- If a method is abstract then it should be declared using abstract keyword.
+- A class which is declared with abstract keyword is called as abstract class.
+- If a class contains atleast one abstract method then the class must be declared as abstract.
+
+
+ Abstract class can contain :
+- Only abstract method or only concrete methods or both abstract and concrete method.
+- It is impossible to create objects for abstract class.
+- The concrete methods of abstract class can be static or non static.
+- The data members of abstract class can be static or non-static.
+- If a class is extending an abstract class the subclass should override all the abstract methods of superclass.
+- If the class do not override the abstract methods of super class then the class should be declared as abstract.
+- Abstract class do not declared as final. It throw a compile time error.
+- Abstract method can not be declared as static, because static method can not be overridden. It throw a compile time error.
+- abstract method can not be declared as final, because final method method can not be overridden.
+- abstract methods can not be declared as private because private method can not be overridden, or cant be inherited.
+- Abstract class can not be declared as private.
+- the static member of abstract class directly call by using classname.datamember name.
+- The non-static members of abstract class can be access only by creating the object of subclass.
+- we can create a reference variable for an abstract class.
+
+the abstract class reference variables are used to achieve:
+(i) Derived Casting
+(ii) Runtime Polymorphism
+
+
+
+
